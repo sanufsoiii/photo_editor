@@ -11,7 +11,6 @@ from PyQt5.QtGui import QPixmap # оптимизированная для пок
 from PIL import Image, ImageFilter
 from PIL.ImageQt import ImageQt # для перевода графики из Pillow в Qt
 
-########### Занятие 1. Создание объектов интерфейса: #########
 app = QApplication([])
 win = QWidget()        
 win.resize(700, 500)  
@@ -48,7 +47,6 @@ win.setLayout(row)
 
 win.show()
 
-########### Занятие 1. Чтение и отображение имён файлов папки #########
 
 workdir = ''
 
@@ -74,8 +72,6 @@ def showFilenamesList():
         lw_files.addItem(filename)
 
 btn_dir.clicked.connect(showFilenamesList)
-
-########### Занятие 2. Отображение превью (из класс - конструктор + loadImage())#########
 
 class ImageProcessor():
     def __init__(self):
