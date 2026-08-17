@@ -9,7 +9,6 @@ from PyQt5.QtCore import Qt # нужна константа Qt.KeepAspectRatio �
 from PyQt5.QtGui import QPixmap # оптимизированная для показа на экране картинка
 
 from PIL import Image, ImageFilter
-from PIL.ImageQt import ImageQt # для перевода графики из Pillow в Qt
 
 app = QApplication([])
 win = QWidget()        
